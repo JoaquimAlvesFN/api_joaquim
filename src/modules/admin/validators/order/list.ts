@@ -6,6 +6,6 @@ export class ListValidator extends PaginationValidator {
   @IsString()
   @IsOptional()
   @IsIn(['description', 'quantity', 'price'])
-  @ApiProperty({ required: false, enum: ['description', 'quantity', 'price']})
+  @ApiProperty({ required: false, enum: ['description', 'quantity', 'price'] })
   public orderBy: string;
 }

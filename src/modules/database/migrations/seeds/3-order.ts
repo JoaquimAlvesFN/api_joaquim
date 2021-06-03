@@ -9,9 +9,9 @@ export async function seed(knex: Knex): Promise<void> {
     .then(() => {
       // Inserts seed entries
       return knex('Order').insert([
-        {description:'Order 001',quantity: 2,price: 5},
-        {description:'Order 002',quantity: 3,price: 6},
-        {description:'Order 003',quantity: 4,price: 7},
+        { description: 'Order 001', quantity: 2, price: 5 },
+        { description: 'Order 002', quantity: 3, price: 6 },
+        { description: 'Order 003', quantity: 4, price: 7 }
       ]);
     });
 }

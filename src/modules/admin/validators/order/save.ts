@@ -21,7 +21,7 @@ export class SaveValidator implements IOrder {
   public quantity: number;
 
   @IsNotEmpty()
-  @IsNumber({maxDecimalPlaces: 2})
+  @IsNumber({ maxDecimalPlaces: 2 })
   @ApiProperty({ required: true, type: 'decimal' })
   public price: number;
 }
